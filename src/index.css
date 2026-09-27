@@ -99,6 +99,17 @@ button { cursor:pointer; font-family:'Inter',sans-serif; }
   border-color: var(--border-h);
   transform: translateY(-2px);
 }
+.btn-resume {
+  background: transparent;
+  color: #ec4899;
+  border: 1px solid rgba(236, 72, 153, 0.4);
+}
+.btn-resume:hover {
+  background: rgba(236, 72, 153, 0.1);
+  border-color: rgba(236, 72, 153, 0.7);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 18px rgba(236, 72, 153, 0.25);
+}
 .btn-full { width: 100%; justify-content: center; padding: 0.85rem; }
 
 /* ─── Glass Card ──────────────────────────────────────────────── */

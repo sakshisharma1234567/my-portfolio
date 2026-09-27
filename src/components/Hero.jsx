@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, ChevronDown } from 'lucide-react';
+import { Mail, ChevronDown, FileText } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './SocialIcons';
+
+const RESUME_URL = 'https://ik.imagekit.io/99o7nobqo/Sakshi_Sharma_Software%20Developer.pdf';
 
 const ROLES = [
   'Full-Stack Developer',
@@ -154,6 +156,14 @@ export default function Hero() {
             </a>
             <a href="#contact" className="btn btn-outline">
               Contact Me <Mail size={16} />
+            </a>
+            <a
+              href={RESUME_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-resume"
+            >
+              <FileText size={16} /> View Resume
             </a>
           </motion.div>
 
